@@ -42,7 +42,9 @@ inline std::string file2str(const char* path) {
 string wslPath(string name)
 {
     string fileName = name + ".wslpath";
-    return file2str(fileName);
+    string ret(file2str(fileName));
+
+    return ret.size() > 0 ? ret : name;
 }
 int main( int argc, char* argv[], char* envp[] )
 {
