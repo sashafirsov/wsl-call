@@ -2,7 +2,7 @@
 ## setup
 0. Enable WSL 
 1. create folder for linux executable symlinks
-2. download into folder binary wsl-call.exe from [releases](releases/)
+2. download into folder binary wsl-call.exe from [releases](https://github.com/sashafirsov/wsl-call/releases/)
     default binary is 64 bit, if you want to use 32 bit one `wsl-call32.exe` should be renamed into `wsl-call.exe` before use.
 3. run `wsl-call.exe -all` to generate executables which match commands in linux PATH
 4. add folder to windows environment PATH
