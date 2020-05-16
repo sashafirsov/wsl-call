@@ -1,10 +1,14 @@
 # Enabling Windows for Linux commands in windows
 ## setup
+0. Enable WSL 
 1. create folder for linux executable symlinks
 2. download into folder binary wsl-call.exe from [releases](releases/)
     default binary is 64 bit, if you want to use 32 bit one `wsl-call32.exe` should be renamed into `wsl-call.exe` before use.
 3. run `wsl-call.exe -all` to generate executables which match commands in linux PATH
 4. add folder to windows environment PATH
+
+Now you should be able to use any command in linux PATH.
+![Linux commands available from cli](screenshot.png)
 
 ## enable particular command
 If you want to use Linux shell commands like 'npm', the alias could be created by
@@ -13,6 +17,7 @@ If you want to use Linux shell commands like 'npm', the alias could be created b
     wsl-call.exe ~/n/bin/npm
 
 or
+
     wsl-call.exe /usr/bin/node
     wsl-call.exe /usr/bin/npm
 
