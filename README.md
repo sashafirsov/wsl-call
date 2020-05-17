@@ -1,6 +1,6 @@
 # Enabling Windows for Linux commands in windows
 ## setup
-0. Enable WSL 
+0. [Setup WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) 
 1. create folder for linux executable symlinks
 2. download into folder binary wsl-call.exe from [releases](https://github.com/sashafirsov/wsl-call/releases/)
     default binary is 64 bit, if you want to use 32 bit one `wsl-call32.exe` should be renamed into `wsl-call.exe` before use.
